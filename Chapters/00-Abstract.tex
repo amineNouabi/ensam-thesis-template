@@ -1,0 +1,23 @@
+\thispagestyle{plain} % Page style without header and footer
+\pdfbookmark[1]{Resume}{arabic-resume} % Add entry to PDF
+\chapter*{\RL{ملخص}} % Chapter* to appear without numeration
+\begin{arabtext}
+	هذا نص عربي يستخدم كملء نصي. هذا النص هو مثال على نص عربي يمكن استخدامه في مستندات لاتك. يمكن استخدام هذا النص لاختبار تنسيق النصوص العربية في المستندات. هذا النص هو مجرد نص تجريبي ولا يحمل أي معنى حقيقي. يمكن تكرار هذا النص عدة مرات للحصول على طول النص المطلوب. هذا النص هو مجرد نص تجريبي ولا يحمل أي معنى حقيقي.
+\end{arabtext}
+
+
+\blankpage
+
+\ifthenelse{\equal{\getLanguage}{french}}{%
+	\pdfbookmark[1]{Résumé}{resume} % Add entry to PDF
+	\chapter*{Résumé} % Chapter* to appear without numeration
+}{%
+	\pdfbookmark[1]{Abstract}{abstract} % Add entry to PDF
+	\chapter*{Abstract} % Chapter* to appear without numeration
+}
+
+\blindtext
+
+\keywordsen{Keyword A, Keyword B, Keyword C.}
+
+\blankpage

@@ -1,0 +1,12 @@
+\thispagestyle{plain} % Page style without header and footer
+
+\ifthenelse{\equal{\getLanguage}{french}}{%
+	\pdfbookmark[1]{Remerciements}{remerciements} % Add entry to PDF
+	\chapter*{Remerciements} % Chapter* to appear without numeration
+}{%
+	\pdfbookmark[1]{Acknowledgements}{acknowledgements} % Add entry to PDF
+	\chapter*{Acknowledgements} % Chapter* to appear without numeration
+}
+
+\blindtext
+\plainblankpage
